@@ -1,0 +1,149 @@
+\documentclass[a4paper,12pt]{article}
+\input{packages}
+\input{config}
+\input{macros}
+\usepackage{float}
+\usepackage{hhline}
+
+\begin{document}
+\titlepagex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Summary}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dictum erat sed felis malesuada, ac tempus magna mattis. Etiam sagittis non augue vel iaculis. Maecenas at massa id ipsum molestie bibendum. Nulla vulputate turpis id accumsan ultricies. Vestibulum sed augue massa. Donec at lacinia ligula. Maecenas risus erat, imperdiet eu fringilla at, ullamcorper vitae velit. Vivamus in velit sagittis, cursus massa eu, commodo orci. Donec non urna porta augue bibendum pharetra. In aliquet facilisis dui, ac interdum orci egestas at. Praesent ultricies interdum massa, nec varius turpis consequat quis. In nec mattis quam.
+
+\section{Introduction}
+
+The goal of the multi-disciplinary FLUTE project is to advance and scale up \textbf{data-driven healthcare} by
+developing novel methods for privacy-preserving cross-border utilization of data hubs. 
+
+The technical innovations of the project will be integrated in a privacy-enforcing platform that will provide
+innovators with a provenly secure environment for federated healthcare AI solution development, testing
+and deployment, including the integration of real world health data from the data hubs and the \textbf{generation and
+utilization of synthetic data (categorical, numerical and images)}.
+
+The project will integrate the FLUTE platform with \textbf{health data hubs located in three different countries}, use their data to develop a novel federated AI toolset for \textbf{diagnosis of clinically significant prostate cancer}, avoiding unnecessary biopsies, thus improving the welfare of patients and significantly reducing the associated costs.
+
+
+\subsection{Specific project objective}
+
+FLUTE's Project Objective 3 (PO3) refers to \textbf{research and develop novel methods for the generation of multi-modal synthetic health data}. Using
+multimodal EHR data from hospitals, biopsy images and multiparametric MRI and measured variables from health
+data lakes, develop novel methods of synthetic multi-modal health data generation. Going beyond the current methods based on Generative Adversarial Networks (GANs) that generate synthetic data by converting real world data
+into 2-D objects, the project application built on developiong new methods that employ autoencoder structures, Generative Pre-trained Transformers (GPT) or Bidirectional Encoder Representations from Transformers (BERT) architectures in the form of 1-D objects. Moreover, it was proposed to develop new models based on GANs and autoencoders to produce bi- and multi-parametric full 3D images that are consistent across contrasts. 
+
+Usage of the novel synthetic data will be for augmentation of Federated Learning training data and model conditioning. Finally, it is proposed to investigate the extraction of synthetic data using federated learning.
+
+Deliverable \emph{D3.1. Structured synthetic health data generation} will contain the results and summarize the developments of Task T3.1. This includes the development of tools for structured synthetic data
+generation, and the results obtained from the statistical evaluation. Hence, research project objectives will be focused on
+\begin{enumerate}
+    \item[PO3.1] \textbf{Algorithms for structured synthetic health data generation}, mainly tabular and dynamic data.
+    \item[PO3.2] \textbf{Metrics for evaluation} of the generated structured synthetic health data, mainly statistical evaluation, but also privacy considerations.
+    \item[PO3.3] \textbf{Definition of multi-modal structures} to make compatible generated structured synthetic health data with any other kind of data, specially images.
+    \item[PO3.4] \textbf{Integration into federated learning mechanisms} of the generated structured synthetic health data to condition learning processes, mainly in the form of data augmentation.
+\end{enumerate}
+
+\paragraph{Outcomes and measurable results} 
+\begin{enumerate}
+    \item Three novel multi-modal synthetic health data sets in the form of 1-D and 2-D objects, for the various generator structures used;
+    \item High quality multi-modal synthetic health dataset evaluated using statistical tests such as Chi-squared test, and expert supervision;
+    \item Two alternative federated learning mechanisms studied, using augmentation and conditioning the learning process approaches, respectively.
+\end{enumerate}
+
+\paragraph{KPI and verification} \begin{enumerate}
+    \item Three synthetic data generator models developed based on multi-modal health data;
+    \item Three synthetic databases generated using the generator models subjected to statistical tests and pass the test for at least 50\% of the considered predictors;
+    \item Two sets of synthetic data integrated in FL by combining local models and synthetic data, and validated using sensitivity, specificity, precision, F1-score and AUC metrics, with better results than in similar approaches that do not use synthetic data.
+\end{enumerate}
+
+\subsection{Relationship with other deliverables and work packages} 
+
+D3.1 Structured synthetic health data generation will contain the results and summarize the
+developments of Task T3.1. This includes the development of tools for structured synthetic data
+generation, and the results obtained from the statistical evaluation.
+
+Task T3.1: Research and development of structured synthetic health data generation is mainly related with project objective PO3, but also with project objectives PO2 and PO4, that is, 
+\begin{itemize}
+    \item PO2. Achieve high \textbf{scalability} of Federated Learning while maintaining state of the art levels of \textbf{privacy} and AI model \textbf{performance}.
+    \item PO4. Design and develop the \textbf{FLUTE platform}.
+\end{itemize}
+
+This task will develop algorithms for the generation of synthetic clinical data and quantitative imaging biomarkers.
+The proposed algorithms will take into account the nature of the data as well as the FL platform defined and
+developed in T4.2. Going beyond the current Generative Adversarial Network (GAN) based methods that generate
+synthetic data by converting real world data into 2-D objects, new methods will be developed that employ
+autoencoder structures, Generative Pre-trained Transformers (GPT) or Bidirectional Encoder Representations from
+Transformers (BERT) architectures, in the form of 1-D objects. Statistical tools will be employed for quantifying
+the synthetic data performance. 
+
+Synthetic data generation will be performed on the cloud-based FLUTE platform, as part of the services provided by platform to researchers and innovators. Innovators will be able to use the synthetic data for model architecture evaluation and for initial coarse training of models under development, \emph{drastically reducing the need for real world
+data in the development and experimentation with new AI models}, thus fostering rapid digital healthcare innovation.
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.9\textwidth]{pics/methodology1.png}
+    \caption{Synthetic data generation module (framed in red) into the FLUTE value chain and high level architecture}
+    \label{fig:methodology1}
+\end{figure}
+
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.9\textwidth]{pics/methodology2.png}
+    \caption{Synthetic data generation module (framed in red) into the reference implementation architecture of FLUTE platform}
+    \label{fig:methodology2}
+\end{figure}
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.75\textwidth]{pics/methodology3.png}
+    \caption{Project flow and 2-stage clinical validation}
+    \label{fig:methodology3}
+\end{figure}
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.75\textwidth]{pics/methodology4.png}
+    \caption{Synthetic image and data generation work package (framed in red) into the FLUTE work plan overview}
+    \label{fig:methodology4}
+\end{figure}
+
+
+\section{State of the Art}
+
+This section is devoted to the state of the art about novel methods of synthetic healthcare data generation. 
+
+As it was written in the project application, health data hubs may contain data in different formats. The multicategory logical, date, ordinal and continuous data from the hospitals are typically in the form of EHRs, while oncology data lakes provide biopsy and biparameteric (bp) and multiparametric (mp) MRI images and measured variables of the tumors, such as size, position and volume. The EHRs and parameters extracted from MRI are usually
+converted into 2-D objects that can be processed by Generative Adversarial Networks (GANs) to generate synthetic
+data: specifically for cancer patients~\cite{GonzalezAbriletal2021}, or medGAN~\cite{Choietal2017} and MC-medGAN~\cite{Caminoetal2018} for EHRs-based secure federated AI model development. In FLUTE, these will be extended to generate novel multi-modal information. Moreover, novel
+approaches using auto-encoder structures as well as GPT / BERT architectures, that currently use 1-D data, will be
+explored by constructing multi-modal datasets in the form of 1-D objects~\cite{Chenetal2020}. For bpMRI and mpMRI, the existing
+models are limited to the generation of 2D slices or small patches due to memory constraints~\cite{Daretal2019}. In FLUTE, new
+models based on GANs and Autoencoders will be developed to generate full 3D volumes. Two approaches will be
+considered: (a) based on the synthesis of a single parametric MRI and image-to-image translation, generate the other
+MRI modalities; (2) generate all modalities in a single stage while ensuring the consistency of the parametric information. Novel uses of synthetic data in FL will be applied based on recent work~\cite{Emametal2020} with insertion in FL considered
+to be a form of data augmentation for training local models on local and synthetic global data.
+
+\subsection{Generative AI market}
+Synthetic data generation, generative systems in general, are engaging the most powerful AI revolution since AI was coined on discriminative models. This is true, not only from the scientific side, but the Industry and Society. For instance, Mistral AI (https://mistral.ai/) a company only four weeks old promising to develop ``the best (open-source) generative AI models'' is valued at \$260 million. France’s Mistral AI blows in with a \$113M seed round to take on OpenAI, the ChatGPT's company~\cite{BraAbb2023}.
+
+Gartner was forecasting in 2021 how synthetic data will completely overshadow real data in AI models by 2030~\cite{Toews2023} (see \figurename~\ref{fig:gartner}).
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=0.75\textwidth]{pics/gartner.png}
+    \caption{Synthetic image and data generation work package (framed in red) into the FLUTE work plan overview}
+    \label{fig:gartner}
+\end{figure}
+
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+\end{document}

@@ -1,0 +1,131 @@
+% Document summary, table of contents, etc.
+% DO NOT ADD PROJECT OR DELIVERABLE SPECIFIC TEXT! USE COMMANDS FROM config.tex INSTEAD!
+\thispagestyle{empty}
+%\CenterWallPaper{1}{logos/background1.jpg}
+\begin{center}
+{\sffamily 
+%{\normalsize\bfseries \ProjTitle}
+%\vspace{2cm}\\
+\resizebox{\textwidth}{!}{\includegraphics{logos/vitamnv_long.pdf}}\\
+\vspace{5.5cm}$\phantom{0}$\\
+{\Huge WP\WP \WPTitle}\\
+\vspace{0.2cm}$\phantom{0}$\\
+{\color{primarycolor}\hrule height 2pt}
+\vspace{0.2cm}$\phantom{0}$\\
+{\Huge \inserttitle}
+\vspace{\fill}\\
+{\normalsize \ProjURL}\\
+}
+\vspace{0.5cm}
+
+\begin{tabular}{p{0.23\textwidth}p{0.7\textwidth}}
+\adjustbox{valign=t}{{\includegraphics[height=2cm]{logos/eu_logo}}} & {\small\bfseries  \textcolor{gray!80}{This project has received funding from the European Union's \FrameworkProgramme research and innovation programme under grant agreement No \ProjGA. Views and opinions expressed are, however, those of the author(s) only and do not necessarily reflect those of the European Union or the HaDEA. Neither the European Union nor the granting authority can be held responsible for them.}}\\
+\end{tabular}
+\end{center}
+
+\newpage
+\ClearWallPaper
+
+\begin{tabularx}{\textwidth}{Xr}
+\textbf{Grant Agreement No.: \ProjGA}&\\
+\textbf{Deliverable: \DelNo \DelTitle}&\\
+&\\
+&\\
+\textbf{Project Start Date}:  \ProjStart  &	\textbf{Duration}: \ProjDuration months\\
+\textbf{Coordinator}: \emph{\CoordEntity} & \\
+\end{tabularx}
+
+
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Deliverable No}: & \DelNo	\\
+\hline
+\textbf{WP No}:& \WP	\\
+\hline
+\textbf{WP Leader}:& \WPLeader	\\
+\hline
+\textbf{Due date}:& \DueDate \\
+\hline
+\textbf{Delivery date}:& \SubDate \\
+\hline
+\end{tabularx}
+
+
+\textbf{Dissemination Level}:
+
+\begin{tabularx}{\textwidth}{|c|X|c|}
+\hline
+PU & Public Use	& \ifthenelse{\equal{\DissLevel}{PU\xspace}}{X}{} \\
+\hline
+PP & Restricted to other programme participants (including the Commission Services)	&  \ifthenelse{\equal{\DissLevel}{PP\xspace}}{X}{} \\
+\hline
+RE & Restricted to a group specified by the consortium (including the Commission Services) &  \ifthenelse{\equal{\DissLevel}{RE\xspace}}{X}{} \\
+\hline
+CO & Confidential, only for members of the consortium (including the Commission Services) & \ifthenelse{\equal{\DissLevel}{CO\xspace}}{X}{} \\
+\hline
+\end{tabularx}
+
+\newpage
+\section*{DOCUMENT SUMMARY INFORMATION}
+\rowcolors{2}{secondarycolor!20}{white}
+\begin{tabularx}{\textwidth}{p{0.25\textwidth}X}
+\textbf{Project title}: & \textbf{\ProjTitle} \\
+\textbf{Short project name}: & \ProjAcro \\
+\textbf{Project No}: & \ProjGA\\
+\textbf{Call Identifier}: & \CallID \\
+\textbf{Thematic Priority}: & \ThematicPriority\\
+\textbf{Type of Action}: & \ActionType \\
+\textbf{Start date of the project}: & \ProjStart \\
+\textbf{Duration of the project}: & \ProjDuration months\\
+\textbf{Project website}: & \ProjURL \\
+\end{tabularx}
+
+\section*{\DelNo \DelTitle}
+\rowcolors{2}{secondarycolor!20}{white}
+\begin{tabularx}{\textwidth}{p{0.25\textwidth}X}
+\textbf{Work Package}: & WP\WP \WPTitle\\
+\textbf{Deliverable number}: & \DelNo \\
+\textbf{Deliverable title}: & \DelTitle \\
+\textbf{Due date}: & \DueDate \\
+\textbf{Actual submission date}: & \SubDate \\
+\textbf{Editor}: & \editor \\
+\textbf{Authors}: & \authors \\
+\textbf{Dissemination Level}: & \DissLevel \\
+\textbf{No. pages}: & \pageref{LastPage} \\
+\textbf{Authorized (date)}: & \AuthDate \\
+\textbf{Responsible person}: & \Coordinator \\
+\textbf{Status}: &  \DelStatus \\
+\end{tabularx}
+
+\input{revision}
+\newpage
+
+\section*{COPYRIGHT}
+
+\begin{center}
+\copyright Copyright by the \textbf{\ProjAcro} consortium, \ProjCopyright.
+\end{center}
+
+This document contains material, which is the copyright of \ProjAcro consortium members and the European Commission, and may not be reproduced or copied without permission, except as mandated by the European Commission Grant Agreement no. \ProjGA for reviewing and dissemination purposes.
+
+\section*{ACKNOWLEDGEMENTS}
+
+\ProjAcro is a project that has received funding from the European Union's \FrameworkProgramme research and innovation programme under Grant Agreement No \ProjGA. 
+Please,  for more information see \ProjURL. 
+
+The partners in the project are 
+\input{partners}.
+The content of this document is the result of the worked developed by the partners in the context of the project.
+%within the \ProjAcro\copyright \ Consortium as a whole.
+
+\section*{DISCLAIMER}
+
+The content of the publication herein is the sole responsibility of the publishers and it does not necessarily represent the views expressed by the European Commission or its services.
+The information contained in this document is provided by the copyright holders "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. 
+In no event shall the members of the \ProjAcro collaboration, including the copyright holders, or the European Commission be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of the information contained in this document, even if advised of the possibility of such damage.
+
+\newpage
+\tableofcontents
+
+\newpage
+
